@@ -31,6 +31,7 @@ public class OwnerSDJpaService implements OwnerService {
     public Owner findByLastName(String lastName) {
         return ownerRepository.findByLastName(lastName);
     }
+
     @Override
     public Set<Owner> findAll() {
         Set<Owner> owners = new HashSet<>();
